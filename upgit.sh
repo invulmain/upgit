@@ -16,9 +16,11 @@ cat /home/user/polaris/add08.sh | perl -ne 'print if 3..3'
 
 chmod +x /home/user/polaris/a.sh
 chmod +x /home/user/polaris/re.sh
+chmod +x /home/user/polaris/upgit.sh
 
 cp /home/user/polaris/a.sh /usr/local/bin/a
 cp /home/user/polaris/re.sh /usr/local/bin/re
+cp /home/user/polaris/upgit.sh /usr/local/bin/upgit
 
 #sed -i 's/.*# this, if it'\''s already.*/alias a='\''\/home\/user\/polaris\/a.sh'\''/' .bashrc
 #sed -i 's/.*# sources \/etc\/bash.*/alias re='\''\/hive\/opt\/opendev\/watchdog-opendev reset'\''/' .bashrc
