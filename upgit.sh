@@ -33,6 +33,6 @@ chmod +x /usr/local/bin/upgit
 #sed -i 's/.*# this, if it'\''s already.*/alias a='\''\/home\/user\/polaris\/a.sh'\''/' .bashrc
 #sed -i 's/.*# sources \/etc\/bash.*/alias re='\''\/hive\/opt\/opendev\/watchdog-opendev reset'\''/' .bashrc
 
-sed -i 's/.*#Moved from postinst again as hello need*/upgit/' /hive/bin/selfupgrade
+sed -i 's/.*#Moved from postinst again as hello need to see new version*/upgit/' /hive/bin/selfupgrade
 
 exit 0
