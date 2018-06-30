@@ -16,6 +16,8 @@ cat /home/user/polaris/add08.sh | perl -ne 'print if 3..3'
 
 cp /home/user/polaris/gpu-stats.sh /hive/sbin/gpu-stats
 
+cp /home/user/amd-oc /hive/sbin/
+
 chmod +x /home/user/polaris/a.sh
 chmod +x /home/user/polaris/re.sh
 chmod +x /home/user/polaris/upgit.sh
