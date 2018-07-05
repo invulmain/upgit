@@ -20,14 +20,17 @@ cp /home/user/amd-oc /hive/sbin/
 
 chmod +x /home/user/polaris/a.sh
 chmod +x /home/user/polaris/re.sh
+chmod +x /home/user/polaris/m.sh
 chmod +x /home/user/polaris/upgit.sh
 
 cp /home/user/polaris/a.sh /usr/local/bin/a
 cp /home/user/polaris/re.sh /usr/local/bin/re
+cp /home/user/polaris/m.sh /usr/local/bin/m
 cp /home/user/polaris/upgit.sh /usr/local/bin/upgit
 
 chmod +x /usr/local/bin/a
 chmod +x /usr/local/bin/re
+chmod +x /usr/local/bin/m
 chmod +x /usr/local/bin/upgit
 
 #sed -i 's/.*# this, if it'\''s already.*/alias a='\''\/home\/user\/polaris\/a.sh'\''/' .bashrc
