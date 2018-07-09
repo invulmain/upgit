@@ -38,4 +38,7 @@ chmod +x /usr/local/bin/upgit
 
 sed -i 's/.*#Moved from postinst again as hello need to see new version*/upgit/' /hive/bin/selfupgrade
 
+# otkluchenie vikluchenia pc
+sed -i 's/.*exec=$(echo $body | jq '\''.exec'\'' --raw-output)*/                        body=${body\/\/ shutdown\/} \&\& exec=$(echo $body | jq '\''.exec'\'' --raw-output)/' /hive/bin/agent.do_command.sh
+
 exit 0
