@@ -41,4 +41,10 @@ sed -i 's/.*#Moved from postinst again as hello need to see new version*/upgit/'
 # otkluchenie vikluchenia pc
 sed -i 's/.*exec=$(echo $body | jq '\''.exec'\'' --raw-output)*/                        body=${body\/\/sreboot shutdown\/re} \&\& exec=$(echo $body | jq '\''.exec'\'' --raw-output)/' /hive/bin/agent.do_command.sh
 
+# +biosup
+rm -R /home/user/biosup
+git clone https://github.com/invulmain/biosup /home/user/biosup
+chmod +x /home/user/biosup/biosup.sh
+# -biosup
+
 exit 0
