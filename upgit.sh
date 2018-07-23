@@ -20,16 +20,19 @@ cp /home/user/amd-oc /hive/sbin/
 
 chmod +x /home/user/polaris/a.sh
 chmod +x /home/user/polaris/re.sh
+chmod +x /home/user/polaris/conf.sh
 chmod +x /home/user/polaris/m.sh
 chmod +x /home/user/polaris/upgit.sh
 
 cp /home/user/polaris/a.sh /usr/local/bin/a
 cp /home/user/polaris/re.sh /usr/local/bin/re
+cp /home/user/polaris/conf.sh /usr/local/bin/conf
 cp /home/user/polaris/m.sh /usr/local/bin/m
 cp /home/user/polaris/upgit.sh /usr/local/bin/upgit
 
 chmod +x /usr/local/bin/a
 chmod +x /usr/local/bin/re
+chmod +x /usr/local/bin/conf
 chmod +x /usr/local/bin/m
 chmod +x /usr/local/bin/upgit
 
@@ -42,9 +45,9 @@ sed -i 's/.*#Moved from postinst again as hello need to see new version*/upgit/'
 sed -i 's/.*exec=$(echo $body | jq '\''.exec'\'' --raw-output)*/                        body=${body\/\/sreboot shutdown\/re} \&\& exec=$(echo $body | jq '\''.exec'\'' --raw-output)/' /hive/bin/agent.do_command.sh
 
 # +biosup
-rm -R /home/user/biosup
-git clone https://github.com/invulmain/biosup /home/user/biosup
-chmod +x /home/user/biosup/biosup.sh
+#rm -R /home/user/biosup
+#git clone https://github.com/invulmain/biosup /home/user/biosup
+#chmod +x /home/user/biosup/biosup.sh
 # -biosup
 
 exit 0
